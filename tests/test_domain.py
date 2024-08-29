@@ -1,4 +1,4 @@
-from pytest_collection_issue.domain import Will, Testament
+from pytest_collection_issue.domain import Will, Testament as _Testament
 
 
 class TestDomain():
@@ -7,5 +7,5 @@ class TestDomain():
         assert will.real_property()
 
     def test_testament(self):
-        testament = Testament()
+        testament = _Testament()
         assert testament.personal_property()
