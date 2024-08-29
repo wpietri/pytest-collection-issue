@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pytest-collection-issue"
+version = "0.1.0"
+description = ""
+authors = ["william <william@williampietri.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--ignore=src"
+]
+pythonpath = [
+    "src", "tests"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
